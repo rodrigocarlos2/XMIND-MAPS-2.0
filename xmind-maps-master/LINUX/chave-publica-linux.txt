@@ -1,0 +1,26 @@
+
+nano /home/developers/.ssh/authorized_keys
+
+nano /etc/ssh/sshd_config -> PermitRootLogin yes, AuthorizedKeysFile      %h/.ssh/authorized_keys
+
+--------------------------------------
+
+cd /srv/dev/
+
+mkdir hello-world
+
+chmod 777 hello-world
+
+git init
+
+--------------------------------------
+
+git clone ssh://developers@172.20.34.2:40123/srv/dev/hello-world/.git/
+
+cd hello-world
+
+git add *
+
+git commit -m "FIRST COMMIT"
+
+git push origin master

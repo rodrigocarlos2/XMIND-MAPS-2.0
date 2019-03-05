@@ -1,0 +1,3 @@
+adduser rodrigo
+
+usermod -aG sudo rodrigo
